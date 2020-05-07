@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Clock</title>
+    <title>Pomodoro TIMER</title>
     <link href="main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <div id="ccontainer">
-        <div>
-            <span>POMODORO CLOCK</span>
+    
+    <h1>POMODORO TIMER</h1>
+
+    <div class="wrapper">
+        <div class="options">
+            <div class="focus">
+                <span>FOCUS</span>
+                <button id="decrease" class="gen-btn">
+                    <i></i>
+                </button>
+                <span class="focus-area"> 25 </span>
+                <button id="increase" class="gen-btn">
+                    <i></i>
+                </button>
+            </div>
+            <div class="break">
+                <span>BREAK</span>
+                <button id="decrease" class="gen-btn">
+                    <i></i>
+                </button>
+                <span class="focus-area"> 25 </span>
+                <button id="increase" class="gen-btn">
+                    <i></i>
+            </div>
         </div>
-        <div class="holder">
-            <span>Session</span>
-            <i class="arrow-up"></i>
-            <input class="text-field" value="10">
-            <i class="arrow-down"></i>
+        <div class="timer">
+            <span>TIMER</span>
+            <div class="countdown">25:00</div>
+        </div>
+        <div class="controls">
+            <button class="gen-btn" id="play-btn">
+                <i></i>
+            </button>
+            <button class="gen-btn" id="pause-btn">
+                <i></i>
+            </button>
+            <button class="gen-btn" id="stop-btn">
+                <i></i>
+            </button>
         </div>
     </div>
+    <footer>
+        <a>
+            <h3>Built By Dennis Kenneth</h3>
+            <i></i>
+        </a>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
