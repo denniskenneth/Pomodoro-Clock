@@ -23,11 +23,41 @@
       <header>
         <h1>POMODORO TIMER</h1>
       </header>
-      <div class="clock row row-cols-2">
-        <div class="col">BREAK</div>
-        <div class="col">WORK</div>
-        <div class="col-12">TIMER</div>
-        <div class="col">ROUND</div>
+      <div class="clock center row row-cols-2">
+        <div class="col row clock-col-1">
+          <div class="col-12">Break</div>
+          <div class="col">
+            <i class="fas fa-minus-square icon breakMinusBtn"></i>
+          </div>
+          <div class="col">
+            <input type="number" value="5" id="break-time" />
+          </div>
+          <div class="col">
+            <i class="fas fa-plus-square icon breakPlusBtn"></i>
+          </div>
+        </div>
+        <div class="col row clock-col-2">
+          <div class="col-12">WORK</div>
+          <div class="col">
+            <i class="fas fa-minus-square icon workMinusBtn"></i>
+          </div>
+          <div class="col">
+            <input type="number" value="5" id="work-time" />
+          </div>
+          <div class="col">
+            <i class="fas fa-plus-square icon workPlusBtn"></i>
+          </div>
+        </div>
+        <div class="col-12 row clock-col-3">
+          <div class="col-12">TIMER</div>
+          <div class="col-12">25 : 00</div>
+          <div class="col"><i class="fas fa-play-circle icon"></i></div>
+          <div class="col"><i class="fas fa-stop-circle icon"></i></div>
+        </div>
+        <div class="col-12 row clock-col-4">
+          <div class="col-12">ROUND</div>
+          <div class="col">1</div>
+        </div>
       </div>
     </div>
 
